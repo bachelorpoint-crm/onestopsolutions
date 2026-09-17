@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneStop Solution | Your Digital Growth Partner</title>
+  <meta name="description" content="OneStop Solution - Premier Digital Agency providing Digital Marketing, Web Development, and Media Editing services to boost your brand growth.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       AGENCY SHOWCASE WEBSITE (Host Page)
+       ========================================================= -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="brand-logo">
+        <span class="brand-badge">⚡</span>
+        <div class="brand-text">
+          <span class="brand-name">ONE STOP SOLUTION</span>
+          <span class="brand-tagline">Your Digital Growth Partner</span>
+        </div>
+      </div>
+
+      <nav class="site-nav">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#pricing-preview" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button class="nav-btn" onclick="OneStopChatbot.openChat()">
+          <span class="nav-btn-icon">💬</span>
+          <span>Chat with AI</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pulse-dot"></span>
+            <span>24/7 AI-Powered Virtual Assistant Online</span>
+          </div>
+          <h1 class="hero-title">
+            Supercharge Your Brand with <span class="gradient-text">Full-Spectrum</span> Digital Solutions
+          </h1>
+          <p class="hero-description">
+            From high-converting Facebook & Google ad campaigns to cutting-edge web development and viral short-form video editing—OneStop Solution empowers your business to dominate online.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="OneStopChatbot.openChat('Digital Marketing')">
+              <span>🚀 Grow My Business</span>
+            </button>
+            <button class="btn btn-secondary" onclick="OneStopChatbot.openChat('Web Development')">
+              <span>🌐 Build a Website</span>
+            </button>
+            <button class="btn btn-ghost" onclick="OneStopChatbot.openChat('Pricing')">
+              <span>💰 Get Instant Quote</span>
+            </button>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">250+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Instant AI Assistance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card hero-preview-card">
+            <div class="preview-header">
+              <div class="preview-bot-avatar">🤖</div>
+              <div>
+                <div class="preview-bot-name">OneStop AI Assistant</div>
+                <div class="preview-bot-status"><span class="status-dot"></span> Ready to help you grow</div>
+              </div>
+            </div>
+            <div class="preview-chat-body">
+              <div class="preview-msg bot">
+                👋 Hello! Welcome to OneStop Solution. How can we accelerate your business today?
+              </div>
+              <div class="preview-chips">
+                <span class="preview-chip" onclick="OneStopChatbot.openChat('Digital Marketing')">🚀 Digital Marketing</span>
+                <span class="preview-chip" onclick="OneStopChatbot.openChat('Web Development')">🌐 Web Development</span>
+                <span class="preview-chip" onclick="OneStopChatbot.openChat('Media Editing')">🎬 Media Editing</span>
+              </div>
+              <div class="preview-msg user">
+                I need more customers for my business!
+              </div>
+              <div class="preview-msg bot">
+                🎯 We can help you generate verified leads with Facebook & Google Ads. Let's create your strategy!
+              </div>
+            </div>
+            <button class="preview-cta-btn" onclick="OneStopChatbot.openChat()">
+              Launch Interactive Assistant →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">OUR EXPERTISE</span>
+          <h2 class="section-title">Everything Your Brand Needs Under One Roof</h2>
+          <p class="section-subtitle">Tailored digital services crafted to turn visitors into paying customers.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Digital Marketing -->
+          <div class="service-card">
+            <div class="service-icon-wrap icon-purple">
+              <span>🚀</span>
+            </div>
+            <h3 class="service-title">Digital Marketing</h3>
+            <p class="service-desc">
+              Data-backed marketing campaigns designed to generate high-quality leads and maximize your return on ad spend.
+            </p>
+            <ul class="service-features">
+              <li>Facebook & Instagram Marketing & Ads</li>
+              <li>Google Ads (Search, Display, Performance Max)</li>
+              <li>Lead Generation & Sales Funnels</li>
+              <li>Social Media Management & Content Strategy</li>
+              <li>Targeted Marketing Consultation</li>
+            </ul>
+            <button class="service-action-btn" onclick="OneStopChatbot.startServiceFlow('digital_marketing')">
+              Discuss Marketing Strategy &rarr;
+            </button>
+          </div>
+
+          <!-- Service 2: Web Development -->
+          <div class="service-card featured">
+            <div class="featured-badge">MOST POPULAR</div>
+            <div class="service-icon-wrap icon-indigo">
+              <span>🌐</span>
+            </div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">
+              High-performance, mobile-first websites and landing pages engineered for lightning speed and conversion.
+            </p>
+            <ul class="service-features">
+              <li>Modern Business & Corporate Websites</li>
+              <li>High-Converting Landing Pages</li>
+              <li>Complete E-commerce Stores</li>
+              <li>Portfolio & Personal Brand Sites</li>
+              <li>Custom Solutions, Speed & SEO Optimization</li>
+            </ul>
+            <button class="service-action-btn" onclick="OneStopChatbot.startServiceFlow('web_development')">
+              Get Website Estimate &rarr;
+            </button>
+          </div>
+
+          <!-- Service 3: Media Editing -->
+          <div class="service-card">
+            <div class="service-icon-wrap icon-pink">
+              <span>🎬</span>
+            </div>
+            <h3 class="service-title">Media & Creative</h3>
+            <p class="service-desc">
+              Thumb-stopping visual storytelling, viral short-form video editing, and modern graphics to elevate your brand identity.
+            </p>
+            <ul class="service-features">
+              <li>Short-form Video Editing (Reels, TikTok, Shorts)</li>
+              <li>High-Retention YouTube Video Editing</li>
+              <li>Commercial & Promotional Video Production</li>
+              <li>Click-Worthy Thumbnail & Post Design</li>
+              <li>Motion Graphics & Brand Creatives</li>
+            </ul>
+            <button class="service-action-btn" onclick="OneStopChatbot.startServiceFlow('media_editing')">
+              Start Creative Project &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="why-section">
+      <div class="container why-container">
+        <div class="why-header">
+          <span class="section-badge">WHY ONESTOP SOLUTION</span>
+          <h2 class="section-title">Built for Founders, Creators, & Growing Brands</h2>
+          <p class="section-subtitle">We don't just deliver files; we partner with you to build sustainable, scalable revenue.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-box">
+            <div class="why-icon">⚡</div>
+            <h4>Fast Turnaround</h4>
+            <p>Agile workflows that bring your projects and marketing campaigns to life without unnecessary delays.</p>
+          </div>
+          <div class="why-box">
+            <div class="why-icon">🎯</div>
+            <h4>ROI Focused</h4>
+            <p>Every ad dollar and website element is designed to convert traffic into real business revenue.</p>
+          </div>
+          <div class="why-box">
+            <div class="why-icon">💬</div>
+            <h4>24/7 Smart Support</h4>
+            <p>Our intelligent virtual assistant is always ready to guide you, answer questions, and scope projects.</p>
+          </div>
+          <div class="why-box">
+            <div class="why-icon">🛡️</div>
+            <h4>Transparent Pricing</h4>
+            <p>Clear, tailored packages without hidden fees. Pay only for what your business truly requires.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Preview Section -->
+    <section id="pricing-preview" class="pricing-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">TRANSPARENT VALUE</span>
+          <h2 class="section-title">Flexible Solutions for Every Stage</h2>
+          <p class="section-subtitle">Every business is unique. Chat with our AI to get an instant tailored recommendation.</p>
+        </div>
+
+        <div class="pricing-card-banner">
+          <div class="pricing-banner-text">
+            <h3>Need a custom quote tailored to your budget?</h3>
+            <p>Answer a few quick questions with our AI assistant and get a personalized scope of work in under 2 minutes.</p>
+          </div>
+          <div class="pricing-banner-action">
+            <button class="btn btn-primary" onclick="OneStopChatbot.startServiceFlow('pricing')">
+              💰 Calculate Project Price
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Direct Channels -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-container">
+        <div class="contact-info">
+          <span class="section-badge">GET IN TOUCH</span>
+          <h2 class="section-title">Ready to Elevate Your Digital Presence?</h2>
+          <p class="contact-desc">
+            Connect directly with the OneStop Solution core team via WhatsApp, Messenger, or phone call.
+          </p>
+          <div class="direct-channels-list">
+            <a id="agency-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="channel-card whatsapp">
+              <span class="channel-icon">💬</span>
+              <div>
+                <strong>WhatsApp Direct</strong>
+                <span class="channel-sub">Chat directly with our strategist</span>
+              </div>
+            </a>
+            <a id="agency-messenger-link" href="#" target="_blank" rel="noopener noreferrer" class="channel-card messenger">
+              <span class="channel-icon">⚡</span>
+              <div>
+                <strong>Facebook Messenger</strong>
+                <span class="channel-sub">Reach our Facebook agency inbox</span>
+              </div>
+            </a>
+            <a id="agency-email-link" href="#" class="channel-card email">
+              <span class="channel-icon">✉️</span>
+              <div>
+                <strong>Email Consultation</strong>
+                <span class="channel-sub" id="agency-email-display">support@onestopsolution.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-card-box">
+          <h3>Talk with OneStop AI Now</h3>
+          <p>Get instant service recommendations, pricing estimates, and submit your project requirements 24 hours a day.</p>
+          <button class="btn btn-primary btn-full" onclick="OneStopChatbot.openChat()">
+            Open OneStop AI Assistant 💬
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="brand-name">ONE STOP SOLUTION</span>
+        <p class="footer-tagline">“Your Digital Growth Partner.”</p>
+      </div>
+      <div class="footer-copy">
+        &copy; <span id="current-year">2026</span> OneStop Solution. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =========================================================
+       ONESTOP AI ASSISTANT - FLOATING WIDGET
+       ========================================================= -->
+  <div id="onestop-chat-widget" class="onestop-widget-container" aria-label="OneStop AI Chatbot">
+    
+    <!-- Floating Launcher Trigger Button -->
+    <button id="onestop-launcher-btn" class="onestop-launcher" aria-label="Open OneStop AI Assistant" onclick="OneStopChatbot.toggleChat()">
+      <div class="launcher-pulse"></div>
+      <div class="launcher-icon-wrap">
+        <span class="launcher-icon open-icon">💬</span>
+        <span class="launcher-icon close-icon">✕</span>
+      </div>
+      <span class="launcher-label">OneStop AI</span>
+      <span class="launcher-badge" id="launcher-unread-badge">1</span>
+    </button>
+
+    <!-- Floating Chat Window -->
+    <div id="onestop-chat-window" class="onestop-window" role="dialog" aria-modal="true" aria-labelledby="chat-header-title">
+      
+      <!-- Chat Header -->
+      <div class="onestop-header">
+        <div class="header-bot-info">
+          <div class="header-avatar-wrap">
+            <span class="header-avatar">🤖</span>
+            <span class="header-status-indicator" title="Online 24/7"></span>
+          </div>
+          <div class="header-details">
+            <div class="header-title-row">
+              <h3 id="chat-header-title" class="header-title">OneStop AI Assistant</h3>
+              <span class="header-role-badge">Virtual Agency Exec</span>
+            </div>
+            <span class="header-subtitle">OneStop Solution • Online 24/7</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="header-icon-btn" title="Clear Chat History" onclick="OneStopChatbot.clearChat()" aria-label="Clear chat">
+            🗑️
+          </button>
+          <button class="header-icon-btn" title="Minimize Chat" onclick="OneStopChatbot.minimizeChat()" aria-label="Minimize chat">
+            —
+          </button>
+          <button class="header-icon-btn" title="Close" onclick="OneStopChatbot.closeChat()" aria-label="Close chat">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Human Handoff Banner (Contextual) -->
+      <div id="handoff-bar" class="handoff-bar">
+        <span>Need human help?</span>
+        <a id="handoff-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="handoff-btn">
+          <span>WhatsApp Team</span>
+        </a>
+      </div>
+
+      <!-- Chat Messages Container -->
+      <div id="onestop-messages-container" class="onestop-messages" role="log" aria-live="polite">
+        <!-- Dynamic message bubbles injected via script.js -->
+      </div>
+
+      <!-- Dynamic Quick Reply Options Container -->
+      <div id="onestop-quick-replies" class="onestop-quick-replies" aria-label="Quick reply options">
+        <!-- Injected dynamically based on conversation stage -->
+      </div>
+
+      <!-- Typing Indicator -->
+      <div id="onestop-typing-indicator" class="onestop-typing" style="display: none;">
+        <div class="typing-avatar">🤖</div>
+        <div class="typing-bubble">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Chat Composer (Input Area) -->
+      <div class="onestop-composer">
+        <div class="composer-inner">
+          <textarea 
+            id="onestop-input" 
+            class="composer-input" 
+            placeholder="Type your message or project requirements..." 
+            rows="1" 
+            aria-label="Chat input"></textarea>
+          
+          <button id="onestop-send-btn" class="composer-send-btn" title="Send message" aria-label="Send message" onclick="OneStopChatbot.handleUserSend()">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="composer-footnote">
+          <span>Supports English, বাংলা & Banglish</span>
+          <span class="separator">•</span>
+          <span id="footer-lead-hint">Ready to convert visitors into clients</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    // Initialize current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
